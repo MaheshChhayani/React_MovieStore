@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    h1= title
+    form(action='/new', method='POST')
+        div
+            label(for='title') Title:
+            input(type='text',name='title')
+        div
+            label(for='writer') writer:
+            input(type='text',name='writer')
+        div
+            label(for='rating') rating:
+            input(type='text',name='rating')
+        div
+            label(for='production') production:
+            input(type='text',name='production')
+        div                        
+            button(type='submit') Submit

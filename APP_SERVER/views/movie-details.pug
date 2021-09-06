@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 movie Info
+  ul
+    li=`title: ${currentMovie.title}`
+    li=`writer: ${currentMovie.writer}`
+    li=`rating: ${currentMovie.rating}`
+    li=`date: ${currentMovie.date}`
+    li=`production: ${currentMovie.production}`

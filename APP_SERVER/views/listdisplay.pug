@@ -1,0 +1,17 @@
+extends layout 
+
+block content 
+  h1 Movie List 
+  p Here is the list of Movies  
+      
+  table
+   thead 
+    tr 
+     th Title 
+     
+   each movie in movies 
+    tbody 
+     tr 
+      td: a(href=`/movies/${movie._id}`)= movie.title  
+      
+  a(type='button'  value="Add movie" href=`/new`) Add movie       

@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+a {
+    color: #00B7FF;
+  }
+form label{
+    width: 200px;
+    text-align: left;
+  }
+form input{
+    width: 200px;
+  }
+
+/*# sourceMappingURL=styles.css.map*/

@@ -1,0 +1,28 @@
+<h1>movie Info</h1>
+
+<form (ngSubmit)="updateNewMovie()">
+    <div>
+        <label for="title">Title:</label>
+        <input type="text" [(ngModel)]="newMovie.title" id="title" name="title" required="required">
+    </div>
+    <div>
+        <label for="writer">Writer:</label>
+        <input type="text" [(ngModel)]="newMovie.writer" id="writer" name="writer" required="required">
+    </div> 
+    <div>
+        <label for="rating">Rating:</label>
+        <input type="number" [(ngModel)]="newMovie.rating" id="rating" name="rating" required="required">
+    </div> 
+    <div>
+        <label for="date">Date:</label>
+        <input type="date" [(ngModel)]="newMovie.date" id="date" name="date" required="required">
+    </div> 
+    <div>
+        <label for="production">Production:</label>
+        <input type="text" [(ngModel)]="newMovie.production" id="production" name="production" required="required">
+    </div> 
+    <div >
+        <button type="submit">Update</button>
+        <button type="button" (click)="deleteMovie()">delete</button>
+    </div>
+</form>
